@@ -1,3 +1,8 @@
+/**
+ * https://github.com/ccmorris/unraid-gui-responsive
+ * Last modified: 2023-04-25
+*/
+
 @media (max-width: 1260px) {
     p {
         text-align: left;
@@ -70,12 +75,23 @@
 }
 
 @media (max-width: 980px) {
+    #nav-block {
+        letter-spacing: 1px;
+    }
+
     div.tabs {
         margin-top: 90px
     }
     .tabs div.clone1, .tabs div.clone2 {
         position: static;
         margin: 0 10px;
+    }
+
+    table.plugins .desc_readmore {
+        height: auto !important;
+    }
+    table.plugins .readmore-js-toggle {
+        display: none;
     }
 
     .jGrowl, .jGrowl-notification, .jGrowl-closer {
@@ -128,11 +144,18 @@
 }
 
 @media (max-width: 420px) {
+    input[type=button], input[type=reset], input[type=submit], button, button[type=button], a.button {
+        letter-spacing: 0;
+    }
+
+    .logo {
+        margin-right: -60px;
+    }
     #menu {
         height: 130px;
     }
     #nav-block {
-        letter-spacing: 1px;
+        letter-spacing: 0;
     }
     table.share_status.dashboard td i[class^="icon-"] {
         display: block;
