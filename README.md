@@ -27,9 +27,10 @@ These style overrides exist because the Unraid GUI does not have a responsive de
 - Some tables are too large and require scrolling left/right, eg. devices on the `Main` page
 - Tabs layout does not work
 - Footer statusbar is gone
+- Scrolling issues on the `Main` page on touch devices
 - Certainly more... Please tell me, or submit a pull request!
 
 ## Next steps
 
 - Collect bug reports from more users
-- See if it is possible to contribute to the [official Unraid theme dynamix](https://github.com/limetech/dynamix)
+- See if it is possible to contribute to the [official Unraid theme dynamix](https://github.com/limetech/webgui/tree/master/plugins/dynamix)
