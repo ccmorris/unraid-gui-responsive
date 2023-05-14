@@ -3,10 +3,6 @@
  * Last modified: 2023-04-25
 */
 
-:root {
-    --menubackground: <?=$ThemeEngine['menubackground']?>
-}
-
 @media (max-width: 1260px) {
     p {
         text-align: left;
@@ -156,10 +152,9 @@
         margin-right: -60px;
     }
     #menu {
-        height: 130px;
+        height: auto;
     }
     #nav-block {
-        background: var(--menubackground) !important;
         letter-spacing: 0;
     }
     table.share_status.dashboard td i[class^="icon-"] {
