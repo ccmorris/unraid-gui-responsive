@@ -6,10 +6,11 @@
 
 1. Install the `Theme Engine` plugin in Unraid
 2. Open the Theme Engine settings, from the Unraid Settings page
-3. Set `Enable custom styling` to `Yes`
-4. Copy and paste the code from [custom.css](./custom.css) into the `Custom styling (advanced)` field
-5. Click apply
-6. Enjoy from your phone/tablet
+3. Toggle from `Basic view` to `Advanced view`
+4. Set `Enable custom styling` to `Yes`
+5. Copy and paste the code from [custom.css](./custom.css) into the `Custom styling (advanced)` field
+6. Click apply
+7. Enjoy from your phone/tablet
 
 ## Why does this exist?
 
