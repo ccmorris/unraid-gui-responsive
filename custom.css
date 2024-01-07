@@ -152,7 +152,7 @@
         margin-right: -60px;
     }
     #menu {
-        height: 130px;
+        height: auto;
     }
     #nav-block {
         letter-spacing: 0;
