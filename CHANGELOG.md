@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2024-01-06
+
+- Fix sizing of menu when there are three lines of menu links (thanks DylanBorchert!)
+- Fix setup instructions for first-time users who need to enable advanced view (thanks ronschaeffer!)
+- Fix size of the upgrade notice
+
 ## 2023-04-25
 
 - Fix layout of the uptime counter for small phone screens such as iPhone Mini
