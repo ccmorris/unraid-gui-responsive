@@ -99,6 +99,17 @@
         max-width: 380px;
         box-sizing: border-box;
     }
+
+    .upgrade_notice {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        top: 0;
+        height: auto;
+        line-height: normal;
+        padding: 0.5rem 1rem;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 760px) {
