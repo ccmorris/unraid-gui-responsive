@@ -1,6 +1,6 @@
 /**
  * https://github.com/ccmorris/unraid-gui-responsive
- * Last modified: 2024-01-06
+ * Last modified: 2024-03-24
 */
 
 @media (max-width: 1260px) {
@@ -47,9 +47,6 @@
         float: none;
     }
 
-    div.tabs {
-        margin-top: 45px
-    }
     div.tab {
         float: none;
         margin: 0;
@@ -79,8 +76,14 @@
         letter-spacing: 1px;
     }
 
+    #menu {
+        position: static !important;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     div.tabs {
-        margin-top: 90px
+        margin-top: 0;
     }
     .tabs div.clone1, .tabs div.clone2 {
         position: static;
@@ -120,11 +123,12 @@
         white-space: normal;
     }
 
+    .tile {
+        width: 100vw;
+    }
+
     #header .logo svg {
         width: 125px;
-    }
-    div.tabs {
-        margin-top: 130px
     }
     div.frame {
         float: none;

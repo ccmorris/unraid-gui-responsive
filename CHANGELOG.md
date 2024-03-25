@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2024-03-24
+
+- Fix layouts with Unraid OS v6.12.x
+
 ## 2024-01-06
 
 - Fix sizing of menu when there are three lines of menu links (thanks DylanBorchert!)
