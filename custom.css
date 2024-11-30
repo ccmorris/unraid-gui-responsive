@@ -3,294 +3,325 @@
  * Last modified: 2024-03-24
 */
 
+/**
+ * https://github.com/ccmorris/unraid-gui-responsive
+ * Last modified: 2024-03-24
+*/
+
 @media (max-width: 1260px) {
-    p {
-        text-align: left;
-    }
+  p {
+    text-align: left;
+  }
 
-    #template {
-        min-width: auto;
-        margin: 0;
-    }
-    #header {
-        position: static;
-        min-width: auto;
-        height: 90px;
-    }
-    .logo {
-        margin-right: -30px;
-    }
+  #template {
+    min-width: auto;
+    margin: 0;
+  }
+  #header {
+    position: static;
+    min-width: auto;
+    height: 90px;
+  }
+  .logo {
+    margin-right: -30px;
+  }
 
-    #menu {
-        min-width: auto;
-        height: auto;
-        z-index: 10;
-    }
-    #nav-block {
-        overflow: visible;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    #nav-left {
-        float: none;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    #nav-right {
-        float: none;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    #nav-block #nav-item, #nav-block #nav-user {
-        float: none;
-    }
+  #menu {
+    min-width: auto;
+    height: auto;
+    z-index: 10;
+  }
+  #nav-block {
+    overflow: visible;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #nav-left {
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #nav-right {
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #nav-block #nav-item,
+  #nav-block #nav-user {
+    float: none;
+  }
 
-    div.tab {
-        float: none;
-        margin: 0;
-    }
-    div.tab [type=radio]+label {
-        display: inline-block;
-    }
-    div.tab [type=radio]+label~.content, div.tab [type=radio]:checked+label~.content {
-        display: block;
-    }
-    label+.content {
-        margin-top: 5px;
-    }
-    div.content {
-        position: static;
-    }
-    table.tablesorter.shift {
-        margin: 0;
-    }
-    table.share_status {
-        white-space: normal;
-    }
+  div.tab {
+    float: none;
+    margin: 0;
+  }
+  div.tab [type="radio"] + label {
+    display: inline-block;
+  }
+  div.tab [type="radio"] + label ~ .content,
+  div.tab [type="radio"]:checked + label ~ .content {
+    display: block;
+  }
+  label + .content {
+    margin-top: 5px;
+  }
+  div.content {
+    overflow: auto;
+  }
+  table.tablesorter.shift {
+    margin-top: 0;
+  }
+  div.tabs:has(div.tab ~ div.tab) div.content {
+    position: static;
+  }
+  div.content table {
+    margin: 0;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table.share_status {
+    white-space: normal;
+  }
 }
 
 @media (max-width: 980px) {
-    #nav-block {
-        letter-spacing: 1px;
-    }
+  #nav-block {
+    letter-spacing: 1px;
+  }
 
-    #menu {
-        position: static !important;
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  #menu {
+    position: static !important;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-    div.tabs {
-        margin-top: 0;
-    }
-    .tabs div.clone1, .tabs div.clone2 {
-        position: static;
-        margin: 0 10px;
-    }
+  div.tabs {
+    margin-top: 0;
+  }
+  .tabs div.clone1,
+  .tabs div.clone2 {
+    position: static;
+    margin: 0 10px;
+  }
 
-    table.plugins .desc_readmore {
-        height: auto !important;
-    }
-    table.plugins .readmore-js-toggle {
-        display: none;
-    }
+  table.plugins .desc_readmore {
+    height: auto !important;
+  }
+  table.plugins .readmore-js-toggle {
+    display: none;
+  }
 
-    .jGrowl, .jGrowl-notification, .jGrowl-closer {
-        width: 100%;
-        max-width: 380px;
-        box-sizing: border-box;
-    }
+  .jGrowl,
+  .jGrowl-notification,
+  .jGrowl-closer {
+    width: 100%;
+    max-width: 380px;
+    box-sizing: border-box;
+  }
 
-    .upgrade_notice {
-        width: 100%;
-        left: 0;
-        margin-left: 0;
-        top: 0;
-        height: auto;
-        line-height: normal;
-        padding: 0.5rem 1rem;
-        box-sizing: border-box;
-    }
+  .upgrade_notice {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    top: 0;
+    height: auto;
+    line-height: normal;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: 760px) {
-    dt {
-        float: none;
-    }
-    dd {
-        white-space: normal;
-    }
+  dt {
+    float: none;
+  }
+  dd {
+    white-space: normal;
+  }
 
-    .tile {
-        width: 100vw;
-    }
+  .tile {
+    width: 100vw;
+  }
 
-    #header .logo svg {
-        width: 125px;
-    }
-    div.frame {
-        float: none;
-    }
-    
-    table.share_status.dashboard.box1,
-    table.share_status.dashboard.box3,
-    table.share_status.dashboard.box2 {
-        float: none;
-        width: 100%;
-    }
-    .frame #db-box2 {
-        margin-bottom: 0;
-    }
-    #footer {
-        display: none;
-    }
-    input[type=button], input[type=reset], input[type=submit], button, button[type=button], a.button {
-        letter-spacing: 1px;
-    }
-    .notice {
-        height: auto;
-        line-height: inherit;
-        padding: 15px 15px 15px 75px;
-        background-position: 15px center;
-        background-size: 45px auto;
-    }
+  #header .logo svg {
+    width: 125px;
+  }
+  div.frame {
+    float: none;
+  }
+
+  table.share_status.dashboard.box1,
+  table.share_status.dashboard.box3,
+  table.share_status.dashboard.box2 {
+    float: none;
+    width: 100%;
+  }
+  .frame #db-box2 {
+    margin-bottom: 0;
+  }
+  #footer {
+    display: none;
+  }
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"],
+  button,
+  button[type="button"],
+  a.button {
+    letter-spacing: 1px;
+  }
+  .notice {
+    height: auto;
+    line-height: inherit;
+    padding: 15px 15px 15px 75px;
+    background-position: 15px center;
+    background-size: 45px auto;
+  }
 }
 
 @media (max-width: 420px) {
-    input[type=button], input[type=reset], input[type=submit], button, button[type=button], a.button {
-        letter-spacing: 0;
-    }
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"],
+  button,
+  button[type="button"],
+  a.button {
+    letter-spacing: 0;
+  }
 
-    .logo {
-        margin-right: -60px;
-    }
-    #menu {
-        height: auto;
-    }
-    #nav-block {
-        letter-spacing: 0;
-    }
-    table.share_status.dashboard td i[class^="icon-"] {
-        display: block;
-    }
-    .sys_view .left {
-        width: auto;
-    }
-    .ct-name .inner {
-        display: block;
-    }
-    .sweet-alert {
-        width: 100vw;
-        margin-left: 0;
-        left: 0;
-        box-sizing: border-box;
-    }
-    body .sweet-alert.nchan {
-        width: 100vw;
-        height: auto;
-        max-height: 100vh;
-        margin-left: 0;
-    }
-    div.Panel {
-        margin: 0 1% 10px;
-        height: 8rem;
-        width: 31%;
-    }
+  .logo {
+    margin-right: -60px;
+  }
+  #menu {
+    height: auto;
+  }
+  #nav-block {
+    letter-spacing: 0;
+  }
+  table.share_status.dashboard td i[class^="icon-"] {
+    display: block;
+  }
+  .sys_view .left {
+    width: auto;
+  }
+  .ct-name .inner {
+    display: block;
+  }
+  .sweet-alert {
+    width: 100vw;
+    margin-left: 0;
+    left: 0;
+    box-sizing: border-box;
+  }
+  body .sweet-alert.nchan {
+    width: 100vw;
+    height: auto;
+    max-height: 100vh;
+    margin-left: 0;
+  }
+  div.Panel {
+    margin: 0 1% 10px;
+    height: 8rem;
+    width: 31%;
+  }
 
-    .jGrowl, .jGrowl-notification, .jGrowl-closer {
-        width: auto;
-        left: 10px;
-        right: 10px;
-    }
+  .jGrowl,
+  .jGrowl-notification,
+  .jGrowl-closer {
+    width: auto;
+    left: 10px;
+    right: 10px;
+  }
 }
-
 
 /**
  * Community Apps plugin
 */
 @media (max-width: 720px) {
-    div.menuItems {
-        position: static;
-        width: auto;
-    }
-    div.mainArea {
-        position: static;
-        min-height: 0;
-    }
-    div.ca_homeTemplates {
-        height: auto !important;
-    }
-    div.spotlightHome {
-        min-width: 0 !important;
-        max-width: none !important;
-        height: auto !important;
-    }
-    div.cardDescription {
-        height: auto;
-        max-height: none;
-    }
-    div.ca_holder {
-        float: none;
-        margin-right: 0;
-        position: relative;
-    }
-    div.betaCardBackground {
-        left: 0;
-        clip-path: none;
-        margin-top: -2rem;
-        margin-bottom: 2rem;
-        width: 100%;
-        height: auto;
-    }
-    div.betaPopupText {
-        transform: none;
-        position: static;
-        line-height: 3rem;
-        height: auto;
-    }
-    div.homespotlightIconArea {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    div.spotlightCardBackground {
-        left: 0;
-        clip-path: none;
-        width: 5rem;
-        height: 5rem;
-        border-radius: 100%;
-        margin-left: 1rem;
-        margin-top: -3rem;
-        margin-bottom: 2rem;
-        position: relative;
-    }
-    div.spotlightPopupText {
-        text-align: center;
-        position: static;
-        line-height: 5rem;
-    }
-    div.officialCardBackground {
-        left: 0;
-        clip-path: none;
-        height: auto;
-        width: 100%;
-        margin-top: -2rem;
-        margin-bottom: 2rem;
-    }
-    div.officialPopupText {
-        position: static;
-        height: auto;
-        transform: none;
-        line-height: 3rem;
-    }
+  div.menuItems {
+    position: static;
+    width: auto;
+  }
+  div.mainArea {
+    position: static;
+    min-height: 0;
+  }
+  div.ca_homeTemplates {
+    height: auto !important;
+  }
+  div.spotlightHome {
+    min-width: 0 !important;
+    max-width: none !important;
+    height: auto !important;
+  }
+  div.cardDescription {
+    height: auto;
+    max-height: none;
+  }
+  div.ca_holder {
+    float: none;
+    margin-right: 0;
+    position: relative;
+  }
+  div.betaCardBackground {
+    left: 0;
+    clip-path: none;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+  }
+  div.betaPopupText {
+    transform: none;
+    position: static;
+    line-height: 3rem;
+    height: auto;
+  }
+  div.homespotlightIconArea {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  div.spotlightCardBackground {
+    left: 0;
+    clip-path: none;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    margin-left: 1rem;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  div.spotlightPopupText {
+    text-align: center;
+    position: static;
+    line-height: 5rem;
+  }
+  div.officialCardBackground {
+    left: 0;
+    clip-path: none;
+    height: auto;
+    width: 100%;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+  }
+  div.officialPopupText {
+    position: static;
+    height: auto;
+    transform: none;
+    line-height: 3rem;
+  }
 }
 @media (max-width: 420px) {
-    #category_list {
-        display: block;
-        column-count: 2;
-    }
+  #category_list {
+    display: block;
+    column-count: 2;
+  }
 }
 
 /**
