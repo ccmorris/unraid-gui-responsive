@@ -8,7 +8,12 @@
 2. Open the Theme Engine settings, from the Unraid Settings page
 3. Toggle from `Basic view` to `Advanced view`
 4. Set `Enable custom styling` to `Yes`
-5. Copy and paste the code from [custom.css](./custom.css) into the `Custom styling (advanced)` field
+5. Copy and paste the following code into the `Custom styling (advanced)` field:
+```html
+</style>
+<link type="text/css" rel="Stylesheet" href="https://raw.githubusercontent.com/dohnutt/unraid-gui-responsive/refs/heads/main/custom.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+```
 6. Click apply
 7. Enjoy from your phone/tablet
 
