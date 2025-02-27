@@ -78,6 +78,9 @@
         overflow-x: auto;
         display: block;
     }
+
+    span.status.vhshift {
+        margin-right: 0;
     }
 }
 
