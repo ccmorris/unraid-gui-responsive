@@ -67,8 +67,17 @@
     table.tablesorter.shift {
         margin: 0;
     }
-    table.share_status {
-        white-space: normal;
+    
+    table.disk_status,
+    table.share_status,
+    table.plugins,
+    table#docker_containers,
+    table#kvm_table,
+    table.dashboard > tbody {
+        max-width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
     }
 }
 
