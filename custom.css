@@ -8,6 +8,7 @@
         text-align: left;
     }
 
+    #displaybox,
     #template {
         min-width: auto;
         margin: 0;
