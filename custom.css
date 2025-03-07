@@ -73,7 +73,13 @@
     table.plugins,
     table#docker_containers,
     table#kvm_table,
-    table.dashboard > tbody {
+    table.usb_mounts,
+    table.samba_mounts,
+    table.usb_absent,
+    table.local_usb,
+    table.dashboard > tbody,
+    div.title.disable_diskio,
+    div.title.ud {
         max-width: 100%;
         overflow-x: auto;
         display: block;
