@@ -77,6 +77,7 @@
     table.samba_mounts,
     table.usb_absent,
     table.local_usb,
+    table.tablesorter.shift,
     table.dashboard > tbody,
     div.title.disable_diskio,
     div.title.ud {
