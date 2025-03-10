@@ -1,6 +1,6 @@
 /**
  * https://github.com/ccmorris/unraid-gui-responsive
- * Last modified: 2024-03-24
+ * Last modified: 2025-02-26
 */
 
 @media (max-width: 1260px) {
@@ -8,6 +8,7 @@
         text-align: left;
     }
 
+    #displaybox,
     #template {
         min-width: auto;
         margin: 0;
@@ -66,8 +67,27 @@
     table.tablesorter.shift {
         margin: 0;
     }
-    table.share_status {
-        white-space: normal;
+    
+    table.disk_status,
+    table.share_status,
+    table.plugins,
+    table#docker_containers,
+    table#kvm_table,
+    table.usb_mounts,
+    table.samba_mounts,
+    table.usb_absent,
+    table.local_usb,
+    table.tablesorter.shift,
+    table.dashboard > tbody,
+    div.title.disable_diskio,
+    div.title.ud {
+        max-width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    span.status.vhshift {
+        margin-right: 0;
     }
 }
 
@@ -292,9 +312,3 @@
         column-count: 2;
     }
 }
-
-/**
- * NOTE: The /style and meta viewport tags are important!
-*/
-</style>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
