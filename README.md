@@ -11,7 +11,7 @@
 5. Copy and paste the following code into the `Custom styling (advanced)` field:
 ```html
 </style>
-<link type="text/css" rel="Stylesheet" href="https://rawcdn.githack.com/ccmoris/unraid-gui-responsive/refs/heads/main/custom.css" />
+<link type="text/css" rel="Stylesheet" href="https://rawcdn.githack.com/ccmorris/unraid-gui-responsive/refs/heads/main/custom.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 ```
 6. Click apply
